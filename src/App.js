@@ -24,7 +24,7 @@ function App() {
           <Route path="/login">
             <Login></Login>
           </Route>
-          <Route path="/explore">
+          <Route path="/explore/:exploreId">
             <Products></Products>
           </Route>
           <Route path="/purchase">
