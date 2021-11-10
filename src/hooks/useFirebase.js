@@ -5,8 +5,6 @@ import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 initializeAuthentication()
 
 const useFirebase = () => {
-
-
     const auth = getAuth();
     const signInUsingGoogle = () => {
         const googleProvider = new GoogleAuthProvider();
