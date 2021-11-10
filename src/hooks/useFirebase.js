@@ -10,14 +10,17 @@ const useFirebase = () => {
     const [error, setError] = useState('');
 
     const auth = getAuth();
-    const signInUsingGoogle = () => {
+    const signInUsingGoogle = (location, history) => {
+        // setIsLoading(true);
         const googleProvider = new GoogleAuthProvider();
-        return signInWithPopup(auth, googleProvider)
-        
-        .catch ( (error) => {
-            const errorMessage = error.message;
-            setError(errorMessage);
+        signInWithPopup(auth, googleProvider)
+        .then((result) => {
+            const user = result.user;
+            setError('')
+        }).catch((error) => {
+            setError(error.message)
         })
+        // .finally(() => setIsLoading(false))
     }
     const logOut = () => {
         signOut(auth)
@@ -25,6 +28,7 @@ const useFirebase = () => {
     }
     return{
         user,
+        setUser,
         signInUsingGoogle,
         logOut
     }
