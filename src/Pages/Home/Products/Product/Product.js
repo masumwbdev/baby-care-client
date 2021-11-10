@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Product.css'
 
 const Product = ({ product }) => {
-    const { id, name, price, description, imgURL } = product;
+    const { _id, name, price, description, imgURL } = product;
     return (
         <div>
             <div>
@@ -18,7 +18,7 @@ const Product = ({ product }) => {
                                     <span className="fs-5 fw-bold text-danger"> $ {price}</span>
                                 </div>
                                 <div>
-                                    <Link to={`/booking/${id}`}><button className="btn btn-outline-dark fw-bold btn-sm">Buy Now <i class="fas fa-cart-plus"></i></button></Link>
+                                    <Link to={`/purchase/${_id}`}><button className="btn btn-outline-dark fw-bold btn-sm">Buy Now <i class="fas fa-cart-plus"></i></button></Link>
                                 </div>
                             </div>
                         </div>

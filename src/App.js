@@ -5,6 +5,7 @@ import Home from './Pages/Home/Home/Home';
 import Products from './Pages/Home/Products/Products/Products';
 import Login from './Pages/Login/Login/Login';
 import NotFound from './Pages/NotFound/NotFound';
+import Purchase from './Pages/Purchase/Purchase';
 import Navbar from './Pages/Shared/Navbar/Navbar';
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
           </Route>
           <Route path="/explore">
             <Products></Products>
+          </Route>
+          <Route path="/purchase">
+            <Purchase></Purchase>
           </Route>
           <Route path="*">
             <NotFound></NotFound>
