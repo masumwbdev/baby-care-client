@@ -1,11 +1,11 @@
 const firebaseConfig = {
-    apiKey: process.env.REACT_APP_API_KEY,
-    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-    projectId: process.env.REACT_APP_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
-    appId: process.env.REACT_APP_APP_ID,
+    apiKey: "AIzaSyCvs6zB4MxQaVbHBV1oHEms3wFhIw1uB9w",
+    authDomain: "baby-care-app-584b5.firebaseapp.com",
+    projectId: "baby-care-app-584b5",
+    storageBucket: "baby-care-app-584b5.appspot.com",
+    messagingSenderId: "513934202727",
+    appId: "1:513934202727:web:4fbba5016e876da34a81c2"
   };
 
-export default firebaseConfig;
+  export default firebaseConfig;
 

@@ -1,7 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import useFirebase from '../../../hooks/useFirebase';
 
 const Navbar = () => {
+    const {user, logOut} = useFirebase();
+    console.log(user)
     return (
         <div>
             <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fs-6 fw-bold">
@@ -41,12 +44,12 @@ const Navbar = () => {
                                 </NavLink>
                             </li>
                         </ul>
-                        {/* <form class="d-flex">
+                        <form class="d-flex">
                             <span className=" me-3 mt-2">{user?.displayName}</span>
                             {user?.displayName ?
                                 <button onClick={logOut} className="btn btn-outline-danger btn-sm fw-bold me-2">Logout</button> :
                                 <NavLink to="/login"><button className="btn btn-dark btn-sm fw-bold me-2">Login</button></NavLink>}
-                        </form> */}
+                        </form>
                     </div>
                 </div>
             </nav>
