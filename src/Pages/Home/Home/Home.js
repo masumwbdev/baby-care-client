@@ -4,11 +4,13 @@ import CustomerReviews from '../CustomerReviews/CustomerReviews';
 import Faq from '../Faq/Faq';
 import Feedback from '../Feedback/Feedback';
 import Products from '../Products/Products/Products';
+import ShopByPrice from '../ShopByPrice/ShopByPrice';
 
 const Home = () => {
     return (
         <div>
             <Banner></Banner>
+            <ShopByPrice></ShopByPrice>
             <Products></Products>
             <CustomerReviews></CustomerReviews>
             <Faq></Faq>
