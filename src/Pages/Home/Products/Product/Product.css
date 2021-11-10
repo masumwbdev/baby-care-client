@@ -1,0 +1,28 @@
+.book-now button{
+    border: none;
+    border: 1px solid blue;
+    background-color: rgb(231, 231, 250);
+    font-weight: 600;
+    border-radius: 40px;
+    padding: 2px 12px;
+    color: rgb(1, 9, 20);
+}
+.book-now .font-awesome{
+    color: rgba(30, 65, 221, 0.849);
+}
+.book-now button:hover{
+    background-color: rgba(0, 0, 255, 0.281);
+    padding: 2px 14px;
+    border: 2px solid blue;
+    transition: 0.3s;
+}
+.price{
+    color: rgb(118, 24, 240);
+}
+.card-icon-color{
+    color: rgba(148, 113, 168, 0.973);
+}
+.service-img{
+    width: 200px;
+    height: 200px;
+}

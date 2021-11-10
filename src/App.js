@@ -23,7 +23,7 @@ function App() {
           <Route path="/login">
             <Login></Login>
           </Route>
-          <Route path="/products">
+          <Route path="/explore">
             <Products></Products>
           </Route>
           <Route path="*">
