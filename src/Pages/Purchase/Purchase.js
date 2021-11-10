@@ -10,6 +10,7 @@ const Purchase = () => {
             .then(res => res.json())
             .then(data => setExplore(data))
     }, [])
+    
     return (
         <div>
             <div className="text-center d-lg-flex mt-5">
