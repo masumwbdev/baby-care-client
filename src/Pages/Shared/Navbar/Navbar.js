@@ -36,19 +36,13 @@ const Navbar = () => {
                                     Add Service
                                 </NavLink>
                             </li>
-                            <li class="nav-item">
-                                <NavLink className="link nav-link"
-                                    to="/my-orders"
-                                >
-                                    My Orders
-                                </NavLink>
-                            </li>
                         </ul>
                         <form class="d-flex">
                             <span className=" me-3 mt-2">{user?.displayName}</span>
-                            {user?.displayName ?
+                            {user?.email ?
                                 <button onClick={logOut} className="btn btn-outline-danger btn-sm fw-bold me-2">Logout</button> :
-                                <NavLink to="/login"><button className="btn btn-dark btn-sm fw-bold me-2">Login</button></NavLink>}
+                                <NavLink to="/login"><button className="btn btn-dark btn-sm fw-bold me-2">Login</button></NavLink>
+                                }
                         </form>
                     </div>
                 </div>
