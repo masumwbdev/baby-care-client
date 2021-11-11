@@ -7,7 +7,7 @@ const Navbar = () => {
     console.log(user)
     return (
         <div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fs-6 fw-bold">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fs-6 fw-bold">
                 <div class="container-fluid">
                     <a class="navbar-brand nav-bar fs-3" href="/home">B<span className="text-primary">CARE</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,9 +31,9 @@ const Navbar = () => {
                             </li>
                             <li class="nav-item">
                                 <NavLink className="link nav-link"
-                                    to="/add-service"
+                                    to="/dashboard"
                                 >
-                                    Add Service
+                                    Dashboard
                                 </NavLink>
                             </li>
                         </ul>
@@ -41,7 +41,7 @@ const Navbar = () => {
                             <span className=" me-3 mt-2">{user?.displayName}</span>
                             {user?.email ?
                                 <button onClick={logOut} className="btn btn-outline-danger btn-sm fw-bold me-2">Logout</button> :
-                                <NavLink to="/login"><button className="btn btn-dark btn-sm fw-bold me-2">Login</button></NavLink>
+                                <NavLink to="/login"><button className="btn btn-outline-primary btn-sm fw-bold me-2">Login</button></NavLink>
                                 }
                         </form>
                     </div>
