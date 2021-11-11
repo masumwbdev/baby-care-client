@@ -1,0 +1,11 @@
+.register-form{
+    background-color: rgba(30, 202, 159, 0.164);
+    margin: 0 auto;
+    width: 60%;
+}
+.register-form a{
+    text-decoration: none;
+}
+.register-form a:hover{
+    text-decoration: underline;
+}

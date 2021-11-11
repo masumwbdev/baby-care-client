@@ -4,6 +4,7 @@ import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import { Link, useHistory } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
+import './Register.css'
 
 const Register = () => {
     const history = useHistory()
@@ -30,13 +31,12 @@ const Register = () => {
     return (
 
         <Container>
-
             <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-                <Grid item xs={12} md={6}>
-                    <Typography variant="h5" gutterBottom component="div">
+                <Grid>
+                    <Typography className="text-center" variant="h3" gutterBottom component="div">
                         Register
                     </Typography>
-                    {!isLoading && <form onSubmit={handleLogin}>
+                    {!isLoading && <form className="text-center rounded py-5 register-form shadow-lg mx-auto w-50" onSubmit={handleLogin}>
                         <TextField id="standard-basic"
                             sx={{ width: '50%', m: 1 }}
                             label="Your Name"
@@ -82,9 +82,6 @@ const Register = () => {
                         error && <Alert severity="error">{error}</Alert>
 
                     }
-                </Grid>
-                <Grid item xs={12} md={6}>
-                    <h3>Register</h3>
                 </Grid>
             </Grid>
         </Container>
