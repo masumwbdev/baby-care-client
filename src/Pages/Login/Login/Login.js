@@ -27,6 +27,7 @@ import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import { Link, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
+import './Login.css'
 
 const Login = () => {
     const [loginData, setLoginData] = useState({});
@@ -52,12 +53,12 @@ const Login = () => {
     }
     return (
         <Container>
-            <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-                <Grid item xs={12} md={6}>
-                    <Typography variant="h5" gutterBottom component="div">
-                        Login
+            <Grid rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+            <Typography className="text-center mt-5" variant="h2" gutterBottom component="div">
+                        Please Login
                     </Typography>
-                    <form onSubmit={handleLogin}>
+                <Grid  item>
+                    <form className="text-center rounded py-5 login-form shadow-lg" onSubmit={handleLogin}>
                         <TextField id="standard-basic"
                             sx={{ width: '50%', m: 1 }}
                             label="Your Email"
@@ -75,10 +76,12 @@ const Login = () => {
                         <Button variant="contained" type="submit" sx={{ width: '50%', m: 1 }}>Login</Button>
                         <br />
                         <Link to="/register">
-                            <Button>Are you new user? please Register</Button>
+                            <Button>Are you a new user? please Register</Button>
                         </Link>
+                        <div>------------or--------------</div>
+                        <Button onClick={handleGoogle}><i class="fab fa-google fs-2 text-danger me-2"></i> Login using google</Button>
                     </form>
-                    <Button onClick={handleGoogle}>Login using google</Button>
+                    
                     {
                         isLoading && <CircularProgress color="secondary" />
                     }
@@ -88,9 +91,6 @@ const Login = () => {
                     {
                         error && <Alert severity="error">{error}</Alert>
                     }
-                </Grid>
-                <Grid item xs={12} md={6}>
-                    <h1>Login</h1>
                 </Grid>
             </Grid>
         </Container>

@@ -1,0 +1,11 @@
+.login-form{
+    background-color: rgba(30, 202, 159, 0.164);
+    margin: 0 auto;
+    width: 50%;
+}
+.login-form a{
+    text-decoration: none;
+}
+.login-form a:hover{
+    text-decoration: underline;
+}
