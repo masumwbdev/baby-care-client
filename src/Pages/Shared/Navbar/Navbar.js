@@ -38,7 +38,7 @@ const Navbar = () => {
                             </li>
                         </ul>
                         <form class="d-flex">
-                            <span className=" me-3 mt-2">{user?.displayName}</span>
+                            <span className=" me-3 mt-2 text-light">{user?.displayName}</span>
                             {user?.email ?
                                 <button onClick={logOut} className="btn btn-outline-danger btn-sm fw-bold me-2">Logout</button> :
                                 <NavLink to="/login"><button className="btn btn-outline-primary btn-sm fw-bold me-2">Login</button></NavLink>
