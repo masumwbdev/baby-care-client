@@ -10,7 +10,7 @@ const MakeAdmin = () => {
     const handleOnBlur = e => {
         setEmail(e.target.value)
     }
-    
+
     const handleAdmin = e => {
         e.preventDefault()
         const user = { email }
@@ -24,12 +24,14 @@ const MakeAdmin = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.modifiedCount) {
-                    console.log(data)
-                    setSuccess(true)
+                    // console.log(data)
+                    // setSuccess(true)
+                    alert('Admin added successfully')
                 }
+                console.log(data)
             })
     }
-    
+
     return (
         <div>
             <h2 className="text-center text-danger mb-4">Make an admin</h2>
