@@ -42,12 +42,10 @@ const MyOrders = () => {
         console.log('clicked')
     }
 
-    const btn = () => {
-        alert('button clicked')
-    }
+
     return (
         <div>
-            <h1>My orders {myOrders.length}</h1>
+            <h3 className="mb-4">My orders {myOrders.length}</h3>
             <TableContainer component={Paper}>
                 <Table aria-label="simple table">
                     <TableHead>

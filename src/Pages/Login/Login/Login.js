@@ -7,6 +7,7 @@ import TextField from '@mui/material/TextField';
 import { Link, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import './Login.css'
+import Footer from '../../Shared/Footer/Footer';
 
 const Login = () => {
     const [loginData, setLoginData] = useState({});
@@ -30,13 +31,14 @@ const Login = () => {
         
     // }
     return (
-        <Container>
+        <div>
+            <Container>
             <Grid rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-            <Typography className="text-center mt-5" variant="h2" gutterBottom component="div">
+            <Typography className="text-center mt-5" variant="h4" gutterBottom component="div">
                         Please Login
                     </Typography>
                 <Grid  item>
-                    <form className="text-center rounded py-5 login-form shadow-lg" onSubmit={handleLogin}>
+                    <form className="text-center mb-5 rounded py-5 login-form shadow-lg" onSubmit={handleLogin}>
                         <TextField id="standard-basic"
                             sx={{ width: '50%', m: 1 }}
                             label="Your Email"
@@ -71,7 +73,12 @@ const Login = () => {
                     }
                 </Grid>
             </Grid>
+            
         </Container>
+        <div>
+            <Footer></Footer>
+        </div>
+        </div>
     );
 };
 
