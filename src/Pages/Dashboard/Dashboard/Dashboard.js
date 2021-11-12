@@ -15,6 +15,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import './Dashboard.css'
 import {
     BrowserRouter as Router,
     Switch,
@@ -28,11 +29,14 @@ import DashboardHome from '../DashboardHome/DashboardHome';
 import AddProduct from '../AddProduct/AddProduct';
 import Reviews from '../Reviews/Reviews';
 import Pay from '../Pay/Pay';
+import MakeAdmin from '../MakeAdmin/MakeAdmin';
+import useAuth from '../../../hooks/useAuth';
 
 
 const drawerWidth = 210;
 
 function Dashboard(props) {
+    const {logOut} = useAuth();
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
     let { path, url } = useRouteMatch();
@@ -42,7 +46,7 @@ function Dashboard(props) {
     };
 
     const drawer = (
-        <div>
+        <div className="dashboard-link">
             <Toolbar />
             <Divider />
             <Link to="home"><Button color="inherit">Home</Button></Link><br/>
@@ -50,7 +54,9 @@ function Dashboard(props) {
             <Link to={`${url}`}><Button color="inherit">Dashboard</Button></Link> <br/>
             <Link to={`${url}/add-product`}><Button color="inherit">Add Product</Button></Link><br/>
             <Link to={`${url}/reviews`}><Button color="inherit">Reviews</Button></Link><br/>
-            <Link to={`${url}/pay`}><Button color="inherit">Pay</Button></Link>
+            <Link to={`${url}/pay`}><Button color="inherit">Pay</Button></Link><br/>
+            <Link to={`${url}/make-admin`}><Button color="inherit">Make Admin</Button></Link><br/>
+            <Link to="home"><button className="logout-button" onClick={logOut} color="inherit">Logout</button></Link>
         </div>
     );
 
@@ -129,6 +135,9 @@ function Dashboard(props) {
                     </Route>
                     <Route path={`${path}/pay`}>
                         <Pay></Pay>
+                    </Route>
+                    <Route path={`${path}/make-admin`}>
+                        <MakeAdmin></MakeAdmin>
                     </Route>
                 </Switch>
 
