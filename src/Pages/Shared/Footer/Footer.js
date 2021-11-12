@@ -35,9 +35,6 @@ const Footer = () => {
                     </div>
                     <div>
                         <h5>Testimonials</h5>
-                        {/* <hr />
-                        <input className="mb-3 p-1" type="email" placeholder="Your email"/>
-                        <input className="p-1" type="password" placeholder="your password" /> <br /><br /><button className="btn btn-warning">Submit</button> */}
                         <form>
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Email address</label>

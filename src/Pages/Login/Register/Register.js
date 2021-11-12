@@ -35,7 +35,7 @@ const Register = () => {
             <Container>
                 <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                     <Grid>
-                        <Typography className="text-center" variant="h3" gutterBottom component="div">
+                        <Typography className="text-center mt-5" variant="h4" gutterBottom component="div">
                             Register
                         </Typography>
                         {!isLoading && <form className="text-center mb-5 rounded py-5 register-form shadow-lg mx-auto w-50" onSubmit={handleLogin}>
