@@ -30,7 +30,7 @@ import ManageProducts from '../ManageProducts/ManageProducts';
 const drawerWidth = 210;
 
 function Dashboard(props) {
-    const {logOut} = useAuth();
+    const { logOut, admin } = useAuth();
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
     let { path, url } = useRouteMatch();
@@ -43,15 +43,20 @@ function Dashboard(props) {
         <div className="dashboard-link">
             <Toolbar />
             <Divider />
-            <Link to="home"><Button color="inherit">Home</Button></Link><br/>
-            
-            <Link to={`${url}`}><Button color="inherit">Dashboard</Button></Link> <br/>
-            <Link to={`${url}/add-product`}><Button color="inherit">Add Product</Button></Link><br/>
-            <Link to={`${url}/add-reviews`}><Button color="inherit">Add Reviews</Button></Link><br/>
-            <Link to={`${url}/pay`}><Button color="inherit">Pay</Button></Link><br/>
-            <Link to={`${url}/manage-order`}><Button color="inherit">Manage All Orders</Button></Link><br/>
-            <Link to={`${url}/manage-product`}><Button color="inherit">Manage Product</Button></Link><br/>
-            <Link to={`${url}/make-admin`}><Button color="inherit">Make Admin</Button></Link><br/>
+            <Link to="home"><Button color="inherit">Home</Button></Link><br />
+
+            <Link to={`${url}`}><Button color="inherit">My Orders</Button></Link> <br />
+            <Link to={`${url}/add-reviews`}><Button color="inherit">Add Reviews</Button></Link><br />
+            <Link to={`${url}/pay`}><Button color="inherit">Pay</Button></Link><br />
+
+
+            {admin && <Box>
+                <Link to={`${url}/manage-order`}><Button color="inherit">Manage All Orders</Button></Link><br />
+                <Link to={`${url}/add-product`}><Button color="inherit">Add Product</Button></Link><br />
+                <Link to={`${url}/manage-product`}><Button color="inherit">Manage Product</Button></Link><br />
+                <Link to={`${url}/make-admin`}><Button color="inherit">Make Admin</Button></Link><br />
+            </Box>}
+
             <Link to="home"><button className="btn btn-dark btn-sm ms-4 mt-2 fw-bold" onClick={logOut} color="inherit">Logout</button></Link>
         </div>
     );

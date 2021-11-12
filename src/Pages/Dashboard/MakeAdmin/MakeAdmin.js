@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
-import { Alert, Button } from '@mui/material';
+import { Button } from '@mui/material';
 
 
 const MakeAdmin = () => {
     const [email, setEmail] = useState('');
-    const [success, setSuccess] = useState(false)
 
     const handleOnBlur = e => {
         setEmail(e.target.value)
@@ -24,8 +23,6 @@ const MakeAdmin = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.modifiedCount) {
-                    // console.log(data)
-                    // setSuccess(true)
                     alert('Admin added successfully')
                 }
                 console.log(data)
@@ -39,9 +36,6 @@ const MakeAdmin = () => {
                 <TextField className="w-50 mb-3" label="Email" type="email" onBlur={handleOnBlur} variant="standard" /> <br />
                 <Button variant="contained" type="submit">Make Admin</Button>
             </form>
-            {
-                success && <Alert severity="success">Make admin successfully</Alert>
-            }
         </div>
     );
 };

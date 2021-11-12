@@ -49,6 +49,7 @@ const useFirebase = () => {
     const [user, setUser] = useState({})
     const [isLoading, setIsLoading] = useState(true)
     const [error, setError] = useState('')
+    const [admin, setAdmin] = useState(false)
     const auth = getAuth()
 
     const registerUser = (email, password,name, history) => {
@@ -105,6 +106,12 @@ const useFirebase = () => {
     }
 
     useEffect(() => {
+        fetch(`http://localhost:5000/top-users/${user.email}`)
+        .then(res => res.json())
+        .then(data => setAdmin(data.admin))
+    }, [user.email])
+
+    useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
                 const uid = user.uid;
@@ -141,6 +148,7 @@ const useFirebase = () => {
     return {
         user,
         isLoading,
+        admin,
         registerUser,
         loginUser,
         signInUsingGoogle,
