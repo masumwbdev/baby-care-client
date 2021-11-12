@@ -1,8 +1,11 @@
 import axios from 'axios';
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import useAuth from '../../../hooks/useAuth';
+import './AddReviews.css'
 
 const AddReviews = () => {
+    const {user} = useAuth();
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         axios.post('http://localhost:5000/add-reviews', data)
@@ -18,11 +21,8 @@ const AddReviews = () => {
         <div className="form-container">
             <h2 className="text-center">Add a packages</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
-                <input {...register("name", { required: true, maxLength: 100 })} placeholder="Name" />
-                <input {...register("location", { required: true, maxLength: 100 })} placeholder="Travel Location" />
-                <input {...register("working", { required: true, maxLength: 100 })} placeholder="Day" />
-                <input type="price" {...register("price")} placeholder="Total Cost" />
-                <input {...register("imgURL")} placeholder="Image url" />
+                <input {...register("name", { required: true, maxLength: 100 })} defaultValue={user.displayName} placeholder="Name" />
+                <input type="number" min='0' max='5' {...register("rating", { required: true, maxLength: 5 })} placeholder="Rating" />
                 <textarea {...register("description")} placeholder="Description" />
                 <input className="submit" type="submit" />
             </form>

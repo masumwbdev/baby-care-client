@@ -3,6 +3,7 @@ import Banner from '../Banner/Banner';
 import CustomerReviews from '../CustomerReviews/CustomerReviews';
 import Faq from '../Faq/Faq';
 import Feedback from '../Feedback/Feedback';
+import GoodNess from '../GoodNess/GoodNess';
 import Products from '../Products/Products/Products';
 import Reviews from '../Reviews/Reviews';
 import ShopByAge from '../ShopByAge/ShopByAge';
@@ -16,6 +17,7 @@ const Home = () => {
             <ShopByAge></ShopByAge>
             <Products></Products>
             <CustomerReviews></CustomerReviews>
+            <GoodNess></GoodNess>
             <Reviews></Reviews>
             <Faq></Faq>
             <Feedback></Feedback>

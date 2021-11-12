@@ -26,7 +26,7 @@ const MyOrders = () => {
     }, [user.email])
 
     const handleDelete = id => {
-        const url = `http://localhost:5000/my-users/${id}/`
+        const url = `http://localhost:5000/my-users/${id}`
         fetch(url, {
             method: 'DELETE'
         })
@@ -39,6 +39,7 @@ const MyOrders = () => {
                     setMyOrders(remaining)
                 }
             })
+        console.log('clicked')
     }
 
     const btn = () => {

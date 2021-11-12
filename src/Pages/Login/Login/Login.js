@@ -25,10 +25,10 @@ const Login = () => {
         loginUser(loginData.email, loginData.password, location, history)
         e.preventDefault()
     }
-    const handleGoogle = () => {
-        signInUsingGoogle(location, history)
+    // const handleGoogle = () => {
+    //     signInUsingGoogle(location, history)
         
-    }
+    // }
     return (
         <Container>
             <Grid rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
@@ -56,8 +56,8 @@ const Login = () => {
                         <Link to="/register">
                             <Button>Are you a new user? please Register</Button>
                         </Link>
-                        <div>------------or--------------</div>
-                        <Button onClick={handleGoogle}><i class="fab fa-google fs-2 text-danger me-2"></i> Login using google</Button>
+                        {/* <div>------------or--------------</div>
+                        <Button onClick={handleGoogle}><i class="fab fa-google fs-2 text-danger me-2"></i> Login using google</Button> */}
                     </form>
                     
                     {

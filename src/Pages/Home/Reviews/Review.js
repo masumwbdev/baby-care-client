@@ -1,10 +1,29 @@
+import { Rating } from '@mui/material';
 import React from 'react';
+import user from '../../../images/user/user.png'
 
 const Review = ({ review }) => {
-    const { _id, name, price, description } = review;
+    const { name, description, rating } = review;
     return (
         <div>
-            <p>{price}</p>
+            <div class="col">
+                <div class="card h-100 p-2">
+                    <div class="card-body">
+                        <p class="card-text">{description?.slice(0,170)}</p>
+                    </div>
+                    <div className="d-flex ms-3 customer-reviews">
+                        <div>
+                            <img src={user} class="card-img-top" alt="..." />
+                        </div>
+                        <div className="ms-3 mt-2">
+                            <h6>{name}</h6>
+                            <div>
+                                <Rating name="read-only" value={rating} readOnly />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
