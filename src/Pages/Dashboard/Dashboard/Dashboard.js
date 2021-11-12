@@ -6,31 +6,23 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import './Dashboard.css'
 import {
-    BrowserRouter as Router,
     Switch,
     Route,
     Link,
-    useParams,
     useRouteMatch
 } from "react-router-dom";
 import { Button } from '@mui/material';
 import DashboardHome from '../DashboardHome/DashboardHome';
 import AddProduct from '../AddProduct/AddProduct';
-import Reviews from '../Reviews/Reviews';
 import Pay from '../Pay/Pay';
 import MakeAdmin from '../MakeAdmin/MakeAdmin';
 import useAuth from '../../../hooks/useAuth';
+import AddReviews from '../AddReviews/AddReviews';
 
 
 const drawerWidth = 210;
@@ -53,10 +45,10 @@ function Dashboard(props) {
             
             <Link to={`${url}`}><Button color="inherit">Dashboard</Button></Link> <br/>
             <Link to={`${url}/add-product`}><Button color="inherit">Add Product</Button></Link><br/>
-            <Link to={`${url}/reviews`}><Button color="inherit">Reviews</Button></Link><br/>
+            <Link to={`${url}/add-reviews`}><Button color="inherit">Add Reviews</Button></Link><br/>
             <Link to={`${url}/pay`}><Button color="inherit">Pay</Button></Link><br/>
             <Link to={`${url}/make-admin`}><Button color="inherit">Make Admin</Button></Link><br/>
-            <Link to="home"><button className="logout-button" onClick={logOut} color="inherit">Logout</button></Link>
+            <Link to="home"><button className="btn btn-dark btn-sm ms-4 mt-2 fw-bold" onClick={logOut} color="inherit">Logout</button></Link>
         </div>
     );
 
@@ -130,8 +122,8 @@ function Dashboard(props) {
                     <Route path={`${path}/add-product`}>
                         <AddProduct></AddProduct>
                     </Route>
-                    <Route path={`${path}/reviews`}>
-                        <Reviews></Reviews>
+                    <Route path={`${path}/add-reviews`}>
+                        <AddReviews></AddReviews>
                     </Route>
                     <Route path={`${path}/pay`}>
                         <Pay></Pay>

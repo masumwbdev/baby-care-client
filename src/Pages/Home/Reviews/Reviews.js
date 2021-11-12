@@ -1,0 +1,29 @@
+import React, { useEffect, useState } from 'react';
+import Review from './Review';
+
+const Reviews = () => {
+    
+    const [reviews, setReviews] = useState([]);
+
+    useEffect(() => {
+        fetch('http://localhost:5000/add-reviews')
+            .then(res => res.json())
+            .then(data => setReviews(data))
+    })
+    return (
+        <div>
+            <div>
+                <h1 className="text-center mb-5 mt-5">Travel Packages</h1>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 container mx-auto mb-5">
+                {
+                    reviews.map(review => <Review
+                        review={review}
+                    ></Review>)
+                }
+            </div>
+        </div>
+    );
+};
+
+export default Reviews;

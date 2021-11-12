@@ -2,10 +2,10 @@ import axios from 'axios';
 import React from 'react';
 import { useForm } from 'react-hook-form';
 
-const AddProduct = () => {
+const AddReviews = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        axios.post('https://creepy-broomstick-99717.herokuapp.com/services', data)
+        axios.post('http://localhost:5000/add-reviews', data)
             .then(res => {
                 // console.log(res)
                 if(res.data.insertedId){
@@ -30,4 +30,4 @@ const AddProduct = () => {
     );
 };
 
-export default AddProduct;
+export default AddReviews;

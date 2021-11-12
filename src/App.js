@@ -3,6 +3,7 @@ import './App.css';
 import AuthProvider from './context/AuthProvider';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 import Pay from './Pages/Dashboard/Pay/Pay';
+import Explores from './Pages/Home/Explores/Explores';
 import Home from './Pages/Home/Home/Home';
 import Products from './Pages/Home/Products/Products/Products';
 import Login from './Pages/Login/Login/Login';
@@ -31,7 +32,7 @@ function App() {
             <Register></Register>
           </Route>
           <Route path="/explore">
-            <Products></Products>
+            <Explores></Explores>
           </Route>
           <Route path="/dashboard">
             <Dashboard></Dashboard>

@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import Product from '../Product/Product';
+import Explore from '../Explore/Explore';
 
-const Products = () => {
-    const [products, setProducts] = useState([]);
+const Explores = () => {
+    const [explores, setExplores] = useState([]);
     useEffect(() => {
         fetch('http://localhost:5000/explore')
             .then(res => res.json())
-            .then(data => setProducts(data.slice(0,6)))
+            .then(data => setExplores(data))
     }, [])
     return (
         <div>
@@ -16,9 +16,9 @@ const Products = () => {
             <div>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 container mx-auto mb-5">
             {
-                products.map(product => <Product
-                    product={product}
-                ></Product>)
+                explores.map(exp => <Explore
+                    exp={exp}
+                ></Explore>)
             }
         </div>
             </div>
@@ -26,4 +26,4 @@ const Products = () => {
     );
 };
 
-export default Products;
+export default Explores;
