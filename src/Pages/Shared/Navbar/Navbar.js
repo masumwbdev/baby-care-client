@@ -29,13 +29,13 @@ const Navbar = () => {
                                     Explore
                                 </NavLink>
                             </li>
-                            <li class="nav-item">
+                            {user.email && <li class="nav-item">
                                 <NavLink className="link nav-link"
                                     to="/dashboard"
                                 >
                                     Dashboard
                                 </NavLink>
-                            </li>
+                            </li>}
                         </ul>
                         <form class="d-flex">
                             <span className=" me-3 mt-2 text-light">{user?.displayName}</span>

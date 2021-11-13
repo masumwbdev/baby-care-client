@@ -12,7 +12,7 @@ const AddReviews = () => {
             .then(res => {
                 // console.log(res)
                 if(res.data.insertedId){
-                    alert('User added successfully');
+                    alert('Rating added successfully. Thanks for your feedback!');
                     reset();
                 }
             })
