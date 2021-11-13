@@ -5,13 +5,11 @@ import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 import Pay from './Pages/Dashboard/Pay/Pay';
 import Explores from './Pages/Home/Explores/Explores';
 import Home from './Pages/Home/Home/Home';
-import Products from './Pages/Home/Products/Products/Products';
 import Login from './Pages/Login/Login/Login';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Register from './Pages/Login/Register/Register';
 import NotFound from './Pages/NotFound/NotFound';
 import Purchase from './Pages/Purchase/Purchase';
-import Footer from './Pages/Shared/Footer/Footer';
 import Navbar from './Pages/Shared/Navbar/Navbar';
 
 function App() {

@@ -1,9 +1,9 @@
 ## Baby Care
 
-{Visit website}(https://baby-care-app-584b5.web.app/ "LCO")
+[Visit website](https://baby-care-app-584b5.web.app/ "LCO")
 https://baby-care-app-584b5.web.app/
 
-_About this website_
+
 This is the Baby Care website. I was very interested in creating this website.The Baby Care website is a fullstack website. 
 
 - This website has some sections on the home page. One of them is the header, banner, products, reviews, footer etc.

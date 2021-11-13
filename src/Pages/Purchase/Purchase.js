@@ -20,7 +20,6 @@ const Purchase = () => {
     const onSubmit = data => {
         axios.post('https://intense-hollows-47893.herokuapp.com/users', data)
             .then(res => {
-                // console.log(res)
                 if (res.data.insertedId) {
                     alert('Congrats!! booking successfully confirmed');
                     reset();

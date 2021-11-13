@@ -10,7 +10,6 @@ const AddReviews = () => {
     const onSubmit = data => {
         axios.post('https://intense-hollows-47893.herokuapp.com/add-reviews', data)
             .then(res => {
-                // console.log(res)
                 if(res.data.insertedId){
                     alert('Rating added successfully. Thanks for your feedback!');
                     reset();
