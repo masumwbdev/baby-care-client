@@ -8,7 +8,7 @@ const AddReviews = () => {
     const {user} = useAuth();
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        axios.post('http://localhost:5000/add-reviews', data)
+        axios.post('https://intense-hollows-47893.herokuapp.com/add-reviews', data)
             .then(res => {
                 // console.log(res)
                 if(res.data.insertedId){

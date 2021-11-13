@@ -13,7 +13,7 @@ const MyOrders = () => {
     const [myOrders, setMyOrders] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/my-users', {
+        fetch('https://intense-hollows-47893.herokuapp.com/my-users', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -26,7 +26,7 @@ const MyOrders = () => {
     }, [user.email])
 
     const handleDelete = id => {
-        const url = `http://localhost:5000/my-users/${id}`
+        const url = `https://intense-hollows-47893.herokuapp.com/my-users/${id}`
         fetch(url, {
             method: 'DELETE'
         })

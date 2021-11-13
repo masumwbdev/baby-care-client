@@ -11,14 +11,14 @@ const Purchase = () => {
     const { user } = useAuth();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/explore/${purchaseId}`)
+        fetch(`https://intense-hollows-47893.herokuapp.com/explore/${purchaseId}`)
             .then(res => res.json())
             .then(data => setExplore(data))
     }, [])
 
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        axios.post('http://localhost:5000/users', data)
+        axios.post('https://intense-hollows-47893.herokuapp.com/users', data)
             .then(res => {
                 // console.log(res)
                 if (res.data.insertedId) {
