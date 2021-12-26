@@ -1,0 +1,34 @@
+.second-nav{
+    background-color: #103178;
+    border-top: 1px solid #2d519c;
+    border-bottom: 1px solid #2d519c;
+    padding: 12px 22px;
+}
+.second-nav p{
+    margin: 0;
+}
+.second-nav input{
+    border-radius: 40px;
+    padding: 12px 44px;
+    border: 0;
+    background-color: #F0F2F5;
+}
+.second-nav .search-icon{
+    margin-left: -50px;
+    color: #103178;
+    font-size: 18px;
+}
+.heart , .cart{
+    color: #FD8D27;
+}
+.heart:hover, .cart:hover{
+    color: #F0F2F5;
+    cursor: pointer;
+}
+.language, .currency{
+    color: #9babcd;
+}
+.language:hover , .currency:hover{
+    color: #FD8D27;
+    cursor: pointer;
+}
