@@ -1,0 +1,15 @@
+.top-nav{
+    background-color: #103178;
+    padding: 4px 30px;
+    color: #FD8D2A;
+}
+.top-nav p{
+    margin: 0;
+}
+.top-nav i{
+    cursor: pointer;
+}
+.second-top-style{
+    /* display: none; */
+    color: blue;
+}

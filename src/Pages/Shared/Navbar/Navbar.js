@@ -1,12 +1,16 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import useFirebase from '../../../hooks/useFirebase';
+import TopNav from '../TopNav/TopNav';
+import SecondNav from '../SecondNav/SecondNav'
 
 const Navbar = () => {
     const {user, logOut} = useFirebase();
     console.log(user)
     return (
         <div>
+            <TopNav></TopNav>
+            <SecondNav></SecondNav>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fs-6 fw-bold">
                 <div class="container-fluid">
                     <a class="navbar-brand nav-bar fs-3" href="/home">B<span className="text-primary">CARE</span></a>
