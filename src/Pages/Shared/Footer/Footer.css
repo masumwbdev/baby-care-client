@@ -1,23 +1,58 @@
-.footer{
-    background-color: #0f1ccf;
+.main-footer{
+    background-color: #103178;
+    padding-top: 22px;
+}
+.sub-footer{
+    background-color: #0E2C6C;
     color: white;
-    padding: 40px 20px;
+    border-radius: 5px;
+    padding: 42px 22px;
 }
-.footer-link{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+.sub-footer input{
+    padding: 8px 20px;
+    border-radius: 40px;
+    border: 0;
 }
-ul li{
-    list-style: none;
+.sub-footer .email-btn{
+    background-color: rgba(255, 255, 255, 0);
     color: white;
+    border: 1px solid white;
+    padding: 6px 22px;
+    border-radius: 40px;
 }
-.footer-ancor-link{
-    text-decoration: none;
+.sub-footer .email-btn:hover{
+    background-color: #fff;
+    color: #0E2C6C;
 }
+.sub-footer .subscribe-btn{
+    border: 0;
+    background-color: #FD8D27;
+    padding: 8px 20px;
+    border-radius: 40px;
+    color: white;
+    font-weight: 600;
+}
+.sub-footer .subscribe-btn:hover{
+    background-color: #fff;
+    color: #0E2C6C;
+}
+.show-map{
+    color: white;
 
-@media only screen and (max-width: 600px){
-    .footer-link{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
+}
+.show-map:hover{
+    color: white;
+}
+.end-footer{
+    border-bottom: 1px solid white;
+}
+.end-footer ul li{
+    color: white;
+    list-style: none;
+    cursor: pointer;
+    margin-top: 12px;
+}
+.copyright p{
+    margin-bottom: 0;
+    color: white;
 }

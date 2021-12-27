@@ -8,7 +8,7 @@
 .more-btn{
     border: 0;
     background-color: #FFFFFF;
-    padding: 6px 22px;
+    padding: 5px 22px;
     border-radius: 40px;
     font-weight: 600;
     color: #103178;
@@ -20,7 +20,7 @@
 .more-btn-last{
     border: 0;
     background-color: #103178;
-    padding: 6px 22px;
+    padding: 5px 22px;
     border-radius: 40px;
     font-weight: 600;
     color: white;

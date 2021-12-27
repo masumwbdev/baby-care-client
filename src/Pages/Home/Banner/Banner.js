@@ -2,6 +2,7 @@ import React from 'react';
 import sliderOne from '../../../images/banner/banner-one.jpg'
 import sliderTwo from '../../../images/banner/banner-two.jpg'
 import sliderThree from '../../../images/banner/banner-three.jpg'
+import './Banner.css'
 
 const Banner = () => {
     return (
