@@ -8,11 +8,11 @@ const Product = ({ product }) => {
         <div>
             <div>
                 <div class="col mt-5">
-                    <div class="card h-100">
+                    <div class="card h-100 border-0">
                         <img className=" service-img mx-auto" src={imgURL} alt="..." />
                         <div class="card-body text-center">
                             <h5 class="card-title">{name.slice(0, 20)}</h5>
-                            <p class="card-text">{description?.slice(0, 150)}</p>
+                            {/* <p class="card-text">{description?.slice(0, 150)}</p> */}
                             <div className="d-flex justify-content-around">
                                 <div>
                                     <span className="fs-5 fw-bold text-danger"> $ {price}</span>

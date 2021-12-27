@@ -1,0 +1,26 @@
+.featured-posts h5{
+    background-color: #FD8D27;
+    padding: 12px 0 12px 12px;
+    color: #ffeedd;
+}
+.feature-post{
+    margin-top: 12px;
+}
+.feature-post-one, .feature-post-two{
+    border-bottom: 1px dashed #FD8D27;
+}
+.feature-post small, .feature-post p{
+    color: #FD8D27;
+    font-weight: 600;
+}
+.test-img{
+    border-radius: 80px;
+}
+.testimonial h6{
+    font-weight: 500;
+    color: #FD8D27;
+}
+.testimonial p{
+    font-weight: 400;
+    color: #0E2C6C;
+}
