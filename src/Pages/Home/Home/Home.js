@@ -9,11 +9,13 @@ import Products from '../Products/Products/Products';
 import Reviews from '../Reviews/Reviews';
 import ShopByAge from '../ShopByAge/ShopByAge';
 import ShopByPrice from '../ShopByPrice/ShopByPrice';
+import Support from '../Support/Support';
 
 const Home = () => {
     return (
         <div>
             <Banner></Banner>
+            <Support></Support>
             <ShopByPrice></ShopByPrice>
             <ShopByAge></ShopByAge>
             <Products></Products>
