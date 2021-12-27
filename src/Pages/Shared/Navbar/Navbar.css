@@ -1,0 +1,18 @@
+.main-nav{
+    background-color: #103178;
+}
+.third-nav{
+    background-color: #103178;
+    color: white;
+}
+.login-icon{
+    color: white;
+}
+.signin-button{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.signin-button:hover, .signin-button:hover i{
+    color: #FD8D27;
+}

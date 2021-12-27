@@ -2,7 +2,7 @@
     background-color: #103178;
     border-top: 1px solid #2d519c;
     border-bottom: 1px solid #2d519c;
-    padding: 12px 22px;
+    padding: 12px 0px 12px 62px;
 }
 .second-nav p{
     margin: 0;
@@ -18,10 +18,10 @@
     color: #103178;
     font-size: 18px;
 }
-.heart , .cart{
+.heart , .cart, .user{
     color: #FD8D27;
 }
-.heart:hover, .cart:hover{
+.heart:hover, .cart:hover, .user:hover{
     color: #F0F2F5;
     cursor: pointer;
 }

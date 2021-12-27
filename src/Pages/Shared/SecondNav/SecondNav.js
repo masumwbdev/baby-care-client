@@ -6,7 +6,7 @@ const SecondNav = () => {
         <div className="second-nav">
             <div className='row align-items-center text-light'>
                 <div className='col-lg-3 col-md-6 col-sm-12'>
-                    <h1><span>Baby</span>Care</h1>
+                    <h1><span>Baby</span> shop</h1>
                 </div>
                 <div className='col-lg-3 col-md-6 col-sm-12'>
                     <h6 className='mt-2'>Need help? 88923 091 - CARE - 000</h6>
@@ -21,6 +21,7 @@ const SecondNav = () => {
                     <span>|</span>
                     <i class="far fa-heart ms-3 me-3 heart"></i>
                     <i class="fas fa-cart-plus cart"></i>
+                    <i class="far fa-user ms-3 user"></i>
                 </div>
             </div>
         </div>

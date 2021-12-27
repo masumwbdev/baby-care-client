@@ -3,17 +3,18 @@ import { NavLink } from 'react-router-dom';
 import useFirebase from '../../../hooks/useFirebase';
 import TopNav from '../TopNav/TopNav';
 import SecondNav from '../SecondNav/SecondNav'
+import './Navbar.css'
 
 const Navbar = () => {
     const {user, logOut} = useFirebase();
     console.log(user)
     return (
-        <div>
+        <div className="main-nav">
+            <div className="container-fluid">
             <TopNav></TopNav>
             <SecondNav></SecondNav>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fs-6 fw-bold">
+            <nav class="navbar navbar-expand-lg navbar-dark third-nav fs-6 fw-bold">
                 <div class="container-fluid">
-                    <a class="navbar-brand nav-bar fs-3" href="/home">B<span className="text-primary">CARE</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -33,6 +34,35 @@ const Navbar = () => {
                                     Explore
                                 </NavLink>
                             </li>
+                            <li class="nav-item">
+                                <NavLink className="link nav-link"
+                                    to="/explore"
+                                >
+                                    Blog
+                                </NavLink>
+                            </li>
+                            <li class="nav-item">
+                                <NavLink className="link nav-link"
+                                    to="/explore"
+                                >
+                                    Collection
+                                </NavLink>
+                            </li>
+                            <li class="nav-item">
+                                <NavLink className="link nav-link"
+                                    to="/explore"
+                                >
+                                    About 
+                                </NavLink>
+                            </li>
+                            <li class="nav-item">
+                                <NavLink className="link nav-link"
+                                    to="/explore"
+                                >
+                                    Contact us
+                                </NavLink>
+                            </li>
+                            {/* <p className='text-right'>Need help? 88923 091 - CARE - 000</p> */}
                             {user.email && <li class="nav-item">
                                 <NavLink className="link nav-link"
                                     to="/dashboard"
@@ -44,13 +74,14 @@ const Navbar = () => {
                         <form class="d-flex">
                             <span className=" me-3 mt-2 text-light">{user?.displayName}</span>
                             {user?.email ?
-                                <button onClick={logOut} className="btn btn-outline-danger btn-sm fw-bold me-2">Logout</button> :
-                                <NavLink to="/login"><button className="btn btn-outline-primary btn-sm fw-bold me-2">Login</button></NavLink>
+                                <i onClick={logOut} class="fas fa-sign-out-alt me-5 mt-2 fs-4"></i> :
+                                <NavLink className="signin-button" to="/login">Sign in <i class="fas fa-sign-in-alt me-5 ms-2 mt-1 fs-5 login-icon"></i></NavLink>
                                 }
                         </form>
                     </div>
                 </div>
             </nav>
+        </div>
         </div>
     );
 };
