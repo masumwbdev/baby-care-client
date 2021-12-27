@@ -1,0 +1,34 @@
+.most-popular-heading{
+    color: #103178;
+}
+.more-products{
+    background-color: #F0F2F5;
+    border: 2px solid #2c2b2e;
+}
+.more-btn{
+    border: 0;
+    background-color: #FFFFFF;
+    padding: 6px 22px;
+    border-radius: 40px;
+    font-weight: 600;
+    color: #103178;
+}
+.more-btn:hover{
+    background-color: #103178;
+    color: white;
+}
+.more-btn-last{
+    border: 0;
+    background-color: #103178;
+    padding: 6px 22px;
+    border-radius: 40px;
+    font-weight: 600;
+    color: white;
+}
+.more-btn-last:hover{
+    background-color: #FFFFFF;
+    color: #103178;
+}
+.more-products h6{
+    color: #103178;
+}

@@ -5,6 +5,7 @@ import CustomerReviews from '../CustomerReviews/CustomerReviews';
 import Faq from '../Faq/Faq';
 import Feedback from '../Feedback/Feedback';
 import GoodNess from '../GoodNess/GoodNess';
+import MoreCategories from '../MoreCategories/MoreCategories';
 import Products from '../Products/Products/Products';
 import Reviews from '../Reviews/Reviews';
 import ShopByAge from '../ShopByAge/ShopByAge';
@@ -16,6 +17,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <Support></Support>
+            <MoreCategories></MoreCategories>
             <ShopByPrice></ShopByPrice>
             <ShopByAge></ShopByAge>
             <Products></Products>
