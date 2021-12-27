@@ -1,0 +1,16 @@
+.facilities-container{
+    border: 1px solid #d7dbe2;
+    padding: 8px 0;
+}
+.facilities p{
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #103178;
+}
+.facilities p:hover{
+    color: #FD8D27;
+    cursor: pointer;
+}
+.border-p{
+    border-right: 2px solid #d7dbe2;
+}

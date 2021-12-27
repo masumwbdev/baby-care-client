@@ -2,6 +2,7 @@ import React from 'react';
 import Footer from '../../Shared/Footer/Footer';
 import Banner from '../Banner/Banner';
 import CustomerReviews from '../CustomerReviews/CustomerReviews';
+import Facilities from '../Facilities/Facilities';
 import Faq from '../Faq/Faq';
 import Feedback from '../Feedback/Feedback';
 import GoodNess from '../GoodNess/GoodNess';
@@ -26,6 +27,7 @@ const Home = () => {
             <Reviews></Reviews>
             <Faq></Faq>
             <Feedback></Feedback>
+            <Facilities></Facilities>
             <Footer></Footer>
         </div>
     );
