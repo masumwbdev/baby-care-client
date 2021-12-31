@@ -9,9 +9,9 @@ const MoreCategories = () => {
     return (
         <div>
             <h2 className='mt-5 text-center mb-3 most-popular-heading'>Check out the most popular products</h2>
-            <div className='container-fluid text-end row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2'>
+            <div className='container-fluid text-end row row-cols-1 row-cols-md-2 row-cols-lg-3 mx-auto'>
                 <div className='col '>
-                    <div className="card more-products border-0 p-3">
+                    <div className="card more-products border-0 p-3 mt-3">
                         <div className='d-flex align-items-center justify-content-around'>
                             <div className='text-center'>
                                 <h6>Front tie Raised</h6>
@@ -25,7 +25,7 @@ const MoreCategories = () => {
                     </div>
                 </div>
                 <div className='col'>
-                    <div className="card more-products border-0 p-3">
+                    <div className="card more-products border-0 p-3 mt-3">
                         <div className='d-flex align-items-center justify-content-around'>
                             <div className='text-center'>
                                 <h6>Kashmir Willow</h6>
@@ -39,7 +39,7 @@ const MoreCategories = () => {
                     </div>
                 </div>
                 <div className='col'>
-                    <div className="card more-products border-0 p-3">
+                    <div className="card more-products border-0 p-3 mt-3">
                         <div className='d-flex align-items-center justify-content-between'>
                             <div className='text-center'>
                                 <h6>Deuter Tour Bag</h6>
@@ -53,7 +53,7 @@ const MoreCategories = () => {
                     </div>
                 </div>
                 <div className='col'>
-                    <div className="card more-products border-0 p-3">
+                    <div className="card more-products border-0 p-3 mt-3">
                         <div className='d-flex align-items-center justify-content-between'>
                             <div className='text-center'>
                                 <h6>Deuter Tour Bag</h6>
@@ -67,7 +67,7 @@ const MoreCategories = () => {
                     </div>
                 </div>
                 <div className='col'>
-                    <div className="card more-products border-0 p-3">
+                    <div className="card more-products border-0 p-3 mt-3">
                         <div className='d-flex align-items-center justify-content-between'>
                             <div className='text-center'>
                                 <h6>Deuter Tour Bag</h6>
@@ -81,7 +81,7 @@ const MoreCategories = () => {
                     </div>
                 </div>
                 <div className='col'>
-                    <div className="card more-products border-0 p-3">
+                    <div className="card more-products border-0 p-3 mt-3">
                         <div className='d-flex align-items-center justify-content-between'>
                             <div className='text-center'>
                                 <h6>Deuter Tour Bag</h6>

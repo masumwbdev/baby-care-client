@@ -59,7 +59,6 @@ const Login = () => {
                         {/* <div>------------or--------------</div>
                         <Button onClick={handleGoogle}><i class="fab fa-google fs-2 text-danger me-2"></i> Login using google</Button> */}
                     </form>
-                    
                     {
                         isLoading && <CircularProgress color="secondary" />
                     }

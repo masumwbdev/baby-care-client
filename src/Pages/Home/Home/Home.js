@@ -2,6 +2,7 @@ import React from 'react';
 import Footer from '../../Shared/Footer/Footer';
 import Banner from '../Banner/Banner';
 import CustomerReviews from '../CustomerReviews/CustomerReviews';
+import DiscOfferDisplay from '../DiscOfferDisplay/DiscOfferDisplay';
 import Facilities from '../Facilities/Facilities';
 import Faq from '../Faq/Faq';
 import Feedback from '../Feedback/Feedback';
@@ -18,6 +19,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <Support></Support>
+            <DiscOfferDisplay></DiscOfferDisplay>
             <MoreCategories></MoreCategories>
             <ShopByPrice></ShopByPrice>
             <ShopByAge></ShopByAge>
@@ -25,8 +27,6 @@ const Home = () => {
             <CustomerReviews></CustomerReviews>
             <GoodNess></GoodNess>
             <Reviews></Reviews>
-            <Faq></Faq>
-            <Feedback></Feedback>
             <Facilities></Facilities>
             <Footer></Footer>
         </div>

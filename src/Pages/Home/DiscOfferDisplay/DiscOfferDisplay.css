@@ -1,0 +1,31 @@
+.meme h4, .biko h4, .baby-love h4{
+    color: #103178;
+}
+.meme h5 , .biko h5{
+    color: #FD8D27;
+}
+.meme p , .biko p, .baby-love h5{
+    color: black;
+}
+.meme button , .biko button{
+    border: 0;
+    background-color: #FD8D27;
+    color: white;
+    padding: 4px 10px;
+    margin-top: 6px;
+    border: 2px solid #FD8D27;
+    font-weight: 600;
+}
+.meme button:hover , .biko button:hover{
+    border: 2px solid #FD8D27;
+    background-color: rgba(255, 255, 255, 0);
+    color: #FD8D27;
+}
+.baby-love button{
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0;
+    text-decoration: underline;
+    color: #FD8D27;
+    font-weight: 600;
+}
