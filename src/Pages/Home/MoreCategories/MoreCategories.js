@@ -3,6 +3,7 @@ import one from '../../../images/category/one.png'
 import two from '../../../images/category/two.png'
 import three from '../../../images/category/three.png'
 import './MoreCategories.css'
+import { Link } from 'react-router-dom';
 
 const MoreCategories = () => {
     return (
@@ -14,7 +15,8 @@ const MoreCategories = () => {
                         <div className='d-flex align-items-center justify-content-around'>
                             <div className='text-center'>
                                 <h6>Front tie Raised</h6>
-                                <button className='more-btn'>More</button>
+                                <Link to="/explore">
+                                <button className='more-btn'>More</button></Link>
                             </div>
                             <div>
                                 <img className='img-fluid w-50' src={one} alt="" />
@@ -27,7 +29,8 @@ const MoreCategories = () => {
                         <div className='d-flex align-items-center justify-content-around'>
                             <div className='text-center'>
                                 <h6>Kashmir Willow</h6>
-                                <button className='more-btn'>More</button>
+                                <Link to="/explore">
+                                <button className='more-btn'>More</button></Link>
                             </div>
                             <div>
                                 <img className='img-fluid w-50' src={two} alt="" />
@@ -40,7 +43,8 @@ const MoreCategories = () => {
                         <div className='d-flex align-items-center justify-content-between'>
                             <div className='text-center'>
                                 <h6>Deuter Tour Bag</h6>
-                                <button className='more-btn'>More</button>
+                                <Link to="/explore">
+                                <button className='more-btn'>More</button></Link>
                             </div>
                             <div>
                                 <img className='img-fluid w-50' src={three} alt="" />
@@ -53,7 +57,8 @@ const MoreCategories = () => {
                         <div className='d-flex align-items-center justify-content-between'>
                             <div className='text-center'>
                                 <h6>Deuter Tour Bag</h6>
-                                <button className='more-btn'>More</button>
+                                <Link to="/explore">
+                                <button className='more-btn'>More</button></Link>
                             </div>
                             <div>
                                 <img className='img-fluid w-50' src={three} alt="" />
@@ -66,7 +71,8 @@ const MoreCategories = () => {
                         <div className='d-flex align-items-center justify-content-between'>
                             <div className='text-center'>
                                 <h6>Deuter Tour Bag</h6>
-                                <button className='more-btn'>More</button>
+                                <Link to="/explore">
+                                <button className='more-btn'>More</button></Link>
                             </div>
                             <div>
                                 <img className='img-fluid w-50' src={three} alt="" />
@@ -79,7 +85,8 @@ const MoreCategories = () => {
                         <div className='d-flex align-items-center justify-content-between'>
                             <div className='text-center'>
                                 <h6>Deuter Tour Bag</h6>
-                                <button className='more-btn-last'>More</button>
+                                <Link to="/explore">
+                                <button className='more-btn'>More</button></Link>
                             </div>
                             <div>
                                 <img className='img-fluid w-50' src={three} alt="" />

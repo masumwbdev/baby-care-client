@@ -26,3 +26,71 @@
     width: 200px;
     height: 200px;
 }
+.product-container p{
+    font-weight: 600;
+    color: #0E2C6C;
+}
+.product-container span{
+    color: #0E2C6C;
+}
+.product-card{
+    border: 1px solid #f4f6f8;
+    position: relative;
+}
+.product-card:hover{
+    border: 0;
+    box-shadow: 5px 5px 30px rgb(235, 239, 240);
+}
+.product-card .add-cart-btn{
+    border: 0;
+    background-color: #0E2C6C;
+    color: white;
+    border-radius: 40px;
+    padding: 2px 12px;
+    font-weight: 600;
+}
+.product-card .add-cart-btn:hover{
+    background-color: #FD8D27;
+}
+.in-stoke{
+    top: -195px;
+    left: 4px;
+    position: relative;
+    background-color: rgb(231, 231, 250);
+    border: 0;
+    color: rgb(0, 0, 0);
+    width: 58px;
+    border-radius: 40px;
+    font-size: 11px;
+    font-weight: 600;
+}
+.product-card-item{
+    background-color: #fafafa;
+}
+.hover-awesome{
+    position: absolute;
+    top: 0px;
+    left: 180px;
+    display: none;
+}
+.hover-awesome i{
+    font-weight: 82px;
+    margin-top: 6px;
+}
+.hover-awesome .this-icon{
+    padding: 8px;
+    color: #0E2C6C;
+    background-color: #F0F2F5;
+    border-radius: 40px;
+}
+.hover-awesome .this-icon:hover{
+    color: #FD8D27;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.product-card:hover .hover-awesome{
+    display: block;
+}
+.product-title{
+    text-decoration: none;
+}

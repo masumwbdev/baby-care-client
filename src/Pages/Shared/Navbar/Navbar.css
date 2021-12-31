@@ -1,5 +1,6 @@
 .main-nav{
     background-color: #103178;
+    position: relative;
 }
 .third-nav{
     background-color: #103178;
@@ -15,4 +16,12 @@
 }
 .signin-button:hover, .signin-button:hover i{
     color: #FD8D27;
+}
+.dropdown-menu{
+    background-color: yellow;
+    border: 0;
+    width: 100px;
+}
+.dropdown-menu a{
+    font-weight: bold;
 }

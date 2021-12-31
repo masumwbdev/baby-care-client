@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import AuthProvider from './context/AuthProvider';
+import Blog from './Pages/Blog/Blog';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 import Pay from './Pages/Dashboard/Pay/Pay';
 import Explores from './Pages/Home/Explores/Explores';
@@ -33,6 +34,9 @@ function App() {
             </Route>
             <Route path="/explore">
               <Explores></Explores>
+            </Route>
+            <Route path="/blog">
+              <Blog></Blog>
             </Route>
             <PrivateRoute path="/dashboard">
               <Dashboard></Dashboard>

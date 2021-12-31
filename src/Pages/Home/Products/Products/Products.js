@@ -5,6 +5,7 @@ import one from '../../../../images/post/one.png'
 import two from '../../../../images/post/two.png'
 import three from '../../../../images/post/three.png'
 import test from '../../../../images/testimonial/two.png'
+import { Link } from 'react-router-dom';
 
 const Products = () => {
     const [products, setProducts] = useState([]);
@@ -27,7 +28,7 @@ const Products = () => {
                         </div>
                         <div>
                             <small>Nov 6, 2021</small>
-                            <p>Bringing up children is a full time job!</p>
+                            <Link to="/blog"><p>Bringing up children is a full time job!</p></Link>
                         </div>
                     </div>
                     <div className='d-flex feature-post feature-post-two'>
@@ -36,7 +37,7 @@ const Products = () => {
                         </div>
                         <div>
                             <small>Nov 6, 2021</small>
-                            <p>Bringing up children is a full time job!</p>
+                            <Link to="blog"><p>Bringing up children is a full time job!</p></Link>
                         </div>
                     </div>
                     <div className='d-flex feature-post'>
@@ -45,7 +46,7 @@ const Products = () => {
                         </div>
                         <div>
                             <small>Nov 6, 2021</small>
-                            <p>Bringing up children is a full time job!</p>
+                            <Link to="blog"><p>Bringing up children is a full time job!</p></Link>
                         </div>
                     </div>
                     <h5>Testimonials</h5>

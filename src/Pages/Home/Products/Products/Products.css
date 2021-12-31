@@ -1,16 +1,19 @@
 .featured-posts h5{
-    background-color: #FD8D27;
+    background-color: rgb(231, 231, 250);
     padding: 12px 0 12px 12px;
-    color: #ffeedd;
+    color: #000000;
 }
 .feature-post{
     margin-top: 12px;
 }
+.feature-post a{
+    text-decoration: none;
+}
 .feature-post-one, .feature-post-two{
-    border-bottom: 1px dashed #FD8D27;
+    border-bottom: 1px dashed #0E2C6C;
 }
 .feature-post small, .feature-post p{
-    color: #FD8D27;
+    color: #0E2C6C;
     font-weight: 600;
 }
 .test-img{
@@ -18,7 +21,7 @@
 }
 .testimonial h6{
     font-weight: 500;
-    color: #FD8D27;
+    color: #0E2C6C;
 }
 .testimonial p{
     font-weight: 400;
