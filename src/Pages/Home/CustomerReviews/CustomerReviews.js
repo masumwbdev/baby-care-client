@@ -3,7 +3,7 @@ import './CustomerReviews.css'
 
 const CustomerReviews = () => {
     return (
-        <div className="container">
+        <div className="container-fluid mx-auto">
             <h2 className="text-center mt-5 mb-5">Super Safe Standerd</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">

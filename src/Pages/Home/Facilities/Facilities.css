@@ -1,5 +1,5 @@
 .facilities-container{
-    border: 1px solid #d7dbe2;
+    /* border: 1px solid #d7dbe2; */
     padding: 8px 0;
 }
 .facilities p{
@@ -12,5 +12,5 @@
     cursor: pointer;
 }
 .border-p{
-    border-right: 2px solid #d7dbe2;
+    /* border-right: 2px solid #d7dbe2; */
 }

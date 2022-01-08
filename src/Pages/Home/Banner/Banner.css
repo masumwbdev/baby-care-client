@@ -1,6 +1,9 @@
-.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover{
+/* .carousel-control-prev-icon:hover, .carousel-control-next-icon:hover{
     background-color: #F0F2F5;
     padding: 20px;
     border-radius: 50%;
     transition: 0.3s;
+} */
+.banner-container{
+    background-color: #E2E6EF;
 }

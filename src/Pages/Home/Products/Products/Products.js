@@ -20,7 +20,7 @@ const Products = () => {
                 <h1 className="text-center mt-5 text-primary">Kids product</h1>
             </div>
             <div className='row container-fluid mx-auto'>
-                <div className='col-sm-12 col-lg-3 mt-5 featured-posts'>
+                {/* <div className='col-sm-12 col-lg-3 mt-5 featured-posts'>
                     <h5>Featured posts</h5>
                     <div className='d-flex feature-post feature-post-one'>
                         <div>
@@ -55,10 +55,10 @@ const Products = () => {
                         <h6>John Aurongodev</h6>
                         <p className='px-3'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, dicta ipsam soluta sapiente earum laboriosam. Lorem, ipsum dolor sit amet consectetur</p>
                     </div>
-                </div>
-                <div className='col-sm-12 col-lg-9'>
+                </div> */}
+                <div className=''>
                     <div>
-                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2 container mx-auto mb-5">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2 container-fluid mx-auto mb-5">
                             {
                                 products.map(product => <Product
                                     product={product}

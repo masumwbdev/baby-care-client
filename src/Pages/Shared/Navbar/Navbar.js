@@ -13,7 +13,7 @@ const Navbar = () => {
             <div className="">
                 {/* <TopNav></TopNav> */}
                 <SecondNav></SecondNav>
-                <nav class="main-nav-container navbar navbar-expand-lg navbar-light third-nav fs-6 fw-bold">
+                <nav class="main-nav-container navbar navbar-expand-lg navbar-light container-fluid third-nav fs-6 fw-bold">
                     <div class="container-fluid">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -34,52 +34,6 @@ const Navbar = () => {
                                         Products
                                     </NavLink>
                                 </li>
-                                <li class="nav-item">
-                                    <NavLink className="link nav-link"
-                                        to="/blog"
-                                    >
-                                        Blog
-                                    </NavLink>
-                                </li>
-                                <li class="nav-item">
-                                    <NavLink className="link nav-link"
-                                        to="/explore"
-                                    >
-                                        Collection
-                                    </NavLink>
-                                </li>
-
-
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="www" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Dropdown
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="www">Action</a></li>
-                                        <li><a class="dropdown-item" href="www">Another action</a></li>
-                                        <li><hr class="dropdown-divider" /></li>
-                                        <li><a class="dropdown-item" href="www">Something else here</a></li>
-                                    </ul>
-                                </li>
-
-
-
-                                <li class="nav-item">
-                                    <NavLink className="link nav-link"
-                                        to="/explore"
-                                    >
-                                        About
-                                    </NavLink>
-                                </li>
-                                <li class="nav-item">
-                                    <NavLink className="link nav-link"
-                                        to="/explore"
-                                    >
-                                        Contact us
-                                    </NavLink>
-                                </li>
-                                {/* <p className='text-right'>Need help? 88923 091 - CARE - 000</p> */}
                                 {user.email && <li class="nav-item">
                                     <NavLink className="link nav-link"
                                         to="/dashboard"

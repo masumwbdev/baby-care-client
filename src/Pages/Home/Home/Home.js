@@ -18,14 +18,15 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <Support></Support>
+            {/* <Support></Support> */}
             <DiscOfferDisplay></DiscOfferDisplay>
-            <MoreCategories></MoreCategories>
+            <Products></Products>
+            {/* <MoreCategories></MoreCategories> */}
             {/* <ShopByPrice></ShopByPrice> */}
             {/* <ShopByAge></ShopByAge> */}
-            <Products></Products>
-            <CustomerReviews></CustomerReviews>
-            <GoodNess></GoodNess>
+            
+            {/* <CustomerReviews></CustomerReviews> */}
+            {/* <GoodNess></GoodNess> */}
             <Reviews></Reviews>
             <Facilities></Facilities>
             <Footer></Footer>

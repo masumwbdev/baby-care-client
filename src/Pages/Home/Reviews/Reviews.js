@@ -15,7 +15,7 @@ const Reviews = () => {
             <div>
                 <h1 className="text-center mb-5 mt-5">Customer reviews</h1>
             </div>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 container mx-auto mb-5">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 container-fluid mx-auto mb-5">
                 {
                     reviews.map(review => <Review
                         review={review}
