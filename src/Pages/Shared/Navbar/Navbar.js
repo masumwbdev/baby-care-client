@@ -10,10 +10,10 @@ const Navbar = () => {
     console.log(user)
     return (
         <div className="main-nav">
-            <div className="container-fluid">
-                <TopNav></TopNav>
+            <div className="">
+                {/* <TopNav></TopNav> */}
                 <SecondNav></SecondNav>
-                <nav class="navbar navbar-expand-lg navbar-dark third-nav fs-6 fw-bold">
+                <nav class="main-nav-container navbar navbar-expand-lg navbar-light third-nav fs-6 fw-bold">
                     <div class="container-fluid">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -89,7 +89,7 @@ const Navbar = () => {
                                 </li>}
                             </ul>
                             <form class="d-flex">
-                                <span className=" me-3 mt-2 text-light">{user?.displayName}</span>
+                                <span className=" me-3 mt-2">{user?.displayName}</span>
                                 {user?.email ?
                                     <i onClick={logOut} class="fas fa-sign-out-alt me-5 mt-2 fs-4"></i> :
                                     <NavLink className="signin-button" to="/login">Sign in <i class="fas fa-sign-in-alt me-5 ms-2 mt-1 fs-5 login-icon"></i></NavLink>

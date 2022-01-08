@@ -10,8 +10,8 @@ import GoodNess from '../GoodNess/GoodNess';
 import MoreCategories from '../MoreCategories/MoreCategories';
 import Products from '../Products/Products/Products';
 import Reviews from '../Reviews/Reviews';
-import ShopByAge from '../ShopByAge/ShopByAge';
-import ShopByPrice from '../ShopByPrice/ShopByPrice';
+// import ShopByAge from '../ShopByAge/ShopByAge';
+// import ShopByPrice from '../ShopByPrice/ShopByPrice';
 import Support from '../Support/Support';
 
 const Home = () => {
@@ -21,8 +21,8 @@ const Home = () => {
             <Support></Support>
             <DiscOfferDisplay></DiscOfferDisplay>
             <MoreCategories></MoreCategories>
-            <ShopByPrice></ShopByPrice>
-            <ShopByAge></ShopByAge>
+            {/* <ShopByPrice></ShopByPrice> */}
+            {/* <ShopByAge></ShopByAge> */}
             <Products></Products>
             <CustomerReviews></CustomerReviews>
             <GoodNess></GoodNess>

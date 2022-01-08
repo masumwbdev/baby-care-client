@@ -1,7 +1,5 @@
 .second-nav{
-    background-color: #103178;
-    border-top: 1px solid #2d519c;
-    border-bottom: 1px solid #2d519c;
+    background-color: #081621;
     padding: 12px 0px 12px 62px;
 }
 .second-nav p{
@@ -9,7 +7,7 @@
 }
 .second-nav input{
     border-radius: 40px;
-    padding: 12px 44px;
+    padding: 8px 34px;
     border: 0;
     background-color: #F0F2F5;
 }
@@ -30,5 +28,16 @@
 }
 .language:hover , .currency:hover{
     color: #FD8D27;
+    cursor: pointer;
+}
+.second-nav .mi{
+    color: #EF4A23;
+}
+.second-nav span:hover, i:hover{
+    cursor: pointer;
+    color: #EF4A23;
+}
+.second-nav .need-help:hover{
+    color: #EF4A23;
     cursor: pointer;
 }

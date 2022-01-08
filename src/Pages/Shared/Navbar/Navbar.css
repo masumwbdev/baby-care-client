@@ -1,17 +1,17 @@
 .main-nav{
-    background-color: #103178;
+    background-color: #FFFFFF;
     position: relative;
 }
 .third-nav{
-    background-color: #103178;
-    color: white;
+    background-color: #FFFFFF;
+    color: black;
 }
 .login-icon{
-    color: white;
+    color: black;
 }
 .signin-button{
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: 500;
 }
 .signin-button:hover, .signin-button:hover i{
@@ -24,4 +24,8 @@
 }
 .dropdown-menu a{
     font-weight: bold;
+    color: white;
 }
+/* .main-nav-container{
+    box-shadow: 10px 10px 30px lightblue;
+} */
