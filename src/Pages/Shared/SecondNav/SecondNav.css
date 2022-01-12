@@ -1,6 +1,11 @@
 .second-nav{
     background-color: #081621;
-    padding: 12px 0px 12px 62px;
+    width: 100%;
+    padding: 13px 0;
+}
+.width-control{
+    width: 90%;
+    margin: 0 auto;
 }
 .second-nav p{
     margin: 0;

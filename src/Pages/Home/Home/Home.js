@@ -1,5 +1,7 @@
 import React from 'react';
 import Footer from '../../Shared/Footer/Footer';
+import Navbar from '../../Shared/Navbar/Navbar';
+import SecondNav from '../../Shared/SecondNav/SecondNav';
 import Banner from '../Banner/Banner';
 import CustomerReviews from '../CustomerReviews/CustomerReviews';
 import DiscOfferDisplay from '../DiscOfferDisplay/DiscOfferDisplay';
@@ -17,8 +19,10 @@ import Support from '../Support/Support';
 const Home = () => {
     return (
         <div>
+            <SecondNav></SecondNav>
+            <Navbar></Navbar>
             <Banner></Banner>
-            {/* <Support></Support> */}
+            <Support></Support>
             <DiscOfferDisplay></DiscOfferDisplay>
             <Products></Products>
             {/* <MoreCategories></MoreCategories> */}
@@ -26,7 +30,7 @@ const Home = () => {
             {/* <ShopByAge></ShopByAge> */}
             
             {/* <CustomerReviews></CustomerReviews> */}
-            {/* <GoodNess></GoodNess> */}
+            <GoodNess></GoodNess>
             <Reviews></Reviews>
             <Facilities></Facilities>
             <Footer></Footer>

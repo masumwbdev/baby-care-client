@@ -4,9 +4,9 @@ import './SecondNav.css'
 const SecondNav = () => {
     return (
         <div className="second-nav">
-            <div className='row align-items-center text-light container-fluid'>
+            <div className='row align-items-center text-light width-control'>
                 <div className='col-lg-3 col-md-6 col-sm-12'>
-                    <h2><span className='mi'>MI</span> Shop</h2>
+                    <h2><span className='mi'>Babys</span> Shop</h2>
                 </div>
                 <div className='col-lg-3 col-md-6 col-sm-12'>
                     <h6 className='mt-2 need-help'>Need help? 88923 091 - CARE - 000</h6>

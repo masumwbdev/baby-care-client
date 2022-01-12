@@ -3,7 +3,7 @@ import "./Facilities.css"
 
 const Facilities = () => {
     return (
-        <div className='row container-fluid text-center facilities-container mx-auto mt-5'>
+        <div className='row width-control text-center facilities-container mx-auto mt-5'>
             <div className='col-sm-12 col-md-6 col-lg-4 facilities border-p'>
                 <p><i class="fas fa-shopping-basket"></i> Non-contact shipping</p>
             </div>

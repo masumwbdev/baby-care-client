@@ -6,7 +6,7 @@ import footerImg from '../../../images/footer/footer.png'
 const Footer = () => {
     return (
         <div className='main-footer'>
-            <div className='row container mx-auto mt-5 sub-footer'>
+            <div className='row width-control mt-5 sub-footer'>
                 <div className='col-sm-12 col-md-6 col-lg-4'>
                     <h5>Need help</h5>
                     <h4>88923 091 - CARE - 000</h4>
@@ -32,7 +32,7 @@ const Footer = () => {
                     <button className='subscribe-btn'>Subscribe</button>
                 </div>
             </div>
-            <div className='row container mx-auto mt-5 end-footer'>
+            <div className='row width-control mt-5 end-footer'>
                 <div className='col-sm-6 col-md-4 col-lg-2'>
                     <ul>
                         <li>About us</li>

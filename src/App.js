@@ -11,14 +11,12 @@ import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Register from './Pages/Login/Register/Register';
 import NotFound from './Pages/NotFound/NotFound';
 import Purchase from './Pages/Purchase/Purchase';
-import Navbar from './Pages/Shared/Navbar/Navbar';
 
 function App() {
   return (
     <div>
       <AuthProvider>
         <Router>
-          <Navbar></Navbar>
           <Switch>
             <Route exact path="/">
               <Home></Home>

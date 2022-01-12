@@ -4,6 +4,9 @@ import { useParams } from 'react-router';
 import { useForm } from 'react-hook-form';
 import useAuth from '../../hooks/useAuth';
 import './Purchase.css'
+import Footer from '../Shared/Footer/Footer';
+import SecondNav from '../Shared/SecondNav/SecondNav';
+import Navbar from '../Shared/Navbar/Navbar';
 
 const Purchase = () => {
     const [explore, setExplore] = useState({})
@@ -28,33 +31,39 @@ const Purchase = () => {
     };
     return (
         <div>
-            <div className="text-center d-lg-flex mt-5">
-                <div>
-                    <img src={explore.imgURL} alt="" />
-                </div>
-                <div className="px-5 mt-5">
-                    <h2 className="text-warning">About this product</h2>
-                    <hr />
-                    <h3>{explore.name}</h3>
-                    <p>{explore.description}</p>
-                </div>
-            </div>
+            <SecondNav></SecondNav>
+            <Navbar></Navbar>
             <div>
-                <div className="booking-container">
-                    <h2 className="text-center">Book Now</h2>
-                    <form className="mb-5" onSubmit={handleSubmit(onSubmit)}>
-                        <input {...register("name", { required: true, maxLength: 1000 })} defaultValue={user.displayName} />
-                        <input {...register("email", { required: true, maxLength: 1000 })} defaultValue={user.email} />
-                        <input {...register("title", { required: true, maxLength: 1000 })} defaultValue={explore.name} />
-                        <input {...register("img", { required: true, maxLength: 1000 })} defaultValue={explore.imgURL} />
-                        <input {...register("location", { required: true, maxLength: 100 })} placeholder="Where do you live?" />
-                        <input {...register("job", { required: true, maxLength: 1000 })}
-                            placeholder="What's your job?" />
-                        <input className="submit" type="submit" value="Confirm" />
-                    </form>
+                <div className='width-control'>
+                    <div className="text-center d-lg-flex mt-5">
+                        <div>
+                            <img src={explore.imgURL} alt="" />
+                        </div>
+                        <div className="px-5 mt-5">
+                            <h2 className="text-warning">About this product</h2>
+                            <hr />
+                            <h3>{explore.name}</h3>
+                            <p>{explore.description}</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="booking-container">
+                            <h2 className="text-center">Book Now</h2>
+                            <form className="mb-5" onSubmit={handleSubmit(onSubmit)}>
+                                <input {...register("name", { required: true, maxLength: 1000 })} defaultValue={user.displayName} />
+                                <input {...register("email", { required: true, maxLength: 1000 })} defaultValue={user.email} />
+                                <input {...register("title", { required: true, maxLength: 1000 })} defaultValue={explore.name} />
+                                <input {...register("img", { required: true, maxLength: 1000 })} defaultValue={explore.imgURL} />
+                                <input {...register("location", { required: true, maxLength: 100 })} placeholder="Your country?" />
+                                <input {...register("job", { required: true, maxLength: 1000 })}
+                                    placeholder="State?" />
+                                <input className="submit" type="submit" value="Confirm" />
+                            </form>
+                        </div>
+                    </div>
                 </div>
-
             </div>
+            <Footer></Footer>
         </div>
     );
 };

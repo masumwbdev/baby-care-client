@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const DiscOfferDisplay = () => {
     return (
         <div>
-            <div className='text-dark row container-fluid mx-auto mt-5'>
+            <div className='text-dark row width-control mx-auto mt-5'>
                 <div className='col-sm-12 col-md-4 col-lg-4 meme'>
                     <div class="card bg-dark text-white border-0">
                         <img src={one} class="card-img img-fluid" alt="..." />
@@ -38,7 +38,7 @@ const DiscOfferDisplay = () => {
                             <h4 class="card-title">Baby Care Products</h4>
                             <h5>Baby Love</h5>
                             <Link to="/explore">
-                            <button>Browse Products</button></Link>
+                                <button>Browse Products</button></Link>
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 .main-nav{
-    background-color: #FFFFFF;
-    position: relative;
+    width: 100%;
+    border-bottom: 1px solid rgb(233, 233, 233);
 }
 .third-nav{
     background-color: #FFFFFF;
@@ -17,15 +17,7 @@
 .signin-button:hover, .signin-button:hover i{
     color: #FD8D27;
 }
-.dropdown-menu{
-    background-color: yellow;
-    border: 0;
-    width: 100px;
+.width-control{
+    width: 90%;
+    margin: 0 auto;
 }
-.dropdown-menu a{
-    font-weight: bold;
-    color: white;
-}
-/* .main-nav-container{
-    box-shadow: 10px 10px 30px lightblue;
-} */

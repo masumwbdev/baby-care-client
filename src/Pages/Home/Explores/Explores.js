@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Footer from '../../Shared/Footer/Footer';
+import Navbar from '../../Shared/Navbar/Navbar';
+import SecondNav from '../../Shared/SecondNav/SecondNav';
 import Explore from '../Explore/Explore';
 
 const Explores = () => {
@@ -12,16 +14,20 @@ const Explores = () => {
     return (
         <div>
             <div>
-                <div>
-                    <h1 className="text-center mt-5 text-primary">Kids product</h1>
-                </div>
-                <div>
-                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 container mx-auto mb-5">
-                        {
-                            explores.map(exp => <Explore
-                                exp={exp}
-                            ></Explore>)
-                        }
+                <SecondNav></SecondNav>
+                <Navbar></Navbar>
+                <div className="products-cont">
+                    <div>
+                        <h1 className="text-center mt-5 text-primary">Kids product</h1>
+                    </div>
+                    <div>
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-1 container mx-auto mb-5">
+                            {
+                                explores.map(exp => <Explore
+                                    exp={exp}
+                                ></Explore>)
+                            }
+                        </div>
                     </div>
                 </div>
             </div>

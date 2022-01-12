@@ -8,7 +8,7 @@ import fourImg from '../../../images/under-banner/four.png'
 const Support = () => {
     return (
         <div className='support-main'>
-            <div className='row container-fluid align-items-center support-container mx-auto text-end'>
+            <div className='row width-control align-items-center support-container mx-auto text-end'>
                 <div className='col-xm-12 col-sm-6 col-md-6 col-lg-3 d-flex'>
                     <div>
                         <img src={oneImg} alt="" />
