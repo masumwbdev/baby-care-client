@@ -5,17 +5,16 @@
     align-items: center;
     margin: auto;
 }
-.form-container form input, textarea{
+.form-container form input, .form-container form textarea{
     width: 35%;
     margin-top: 10px;
-    border: none;
-    border: 1.6px solid rgb(29, 154, 196);
+    border: 1.6px solid #ddd;
     border-radius: 4px;
     padding: 10px;
     box-shadow: 10px 10px 30px rgb(250, 250, 250);
 }
 .form-container .submit{
-    background-color: rgb(29, 154, 196);
+    background-color: #3749BB;
     color: white;
     font-size: 18px;
 }

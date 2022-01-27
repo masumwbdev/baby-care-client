@@ -18,7 +18,7 @@ const AddReviews = () => {
     };
     return (
         <div className="form-container">
-            <h2 className="text-center">Add a packages</h2>
+            <h2 className="text-center">Add Reviews</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <input {...register("name", { required: true, maxLength: 100 })} defaultValue={user.displayName} placeholder="Name" />
                 <input type="number" min='0' max='5' {...register("rating", { required: true, maxLength: 5 })} placeholder="Rating" />
