@@ -1,26 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.booking-container{
+    background-color: #F2F4F8;
+}
 .booking-container form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: auto;
+}
+.purchase-form{
+    background-color: #fff;
+    padding: 22px 22px 0 22px;
+    border-radius: 6px;
+    margin-bottom: 22px;
 }
 .booking-container form input, textarea{
-    width: 35%;
-    margin-top: 10px;
-    border: none;
-    border: 1.6px solid rgb(29, 154, 196);
+    width: 100%;
+    margin-top: 15px;
+    border: 0;
+    border: 1px solid #ddd;
     border-radius: 4px;
     padding: 10px;
     box-shadow: 10px 10px 30px rgb(250, 250, 250);
 }
+.booking-container form .input-name, .booking-container form .input-email{
+    width: 45%;
+    margin-right: 10px;
+}
 .booking-container .submit{
-    background-color: rgb(29, 154, 196);
+    background-color: #3749BB;
     color: white;
     font-size: 18px;
+    border: 0;
+    font-weight: 600;
 }
 .booking-container h2{
     margin-top: 50px;
     margin-bottom: 20px;
-
+}
+.display-single-p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+}
+.purchase-about-product span{
+    border-bottom: 2px solid #3749BB;
+    color: #3749BB;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+}
+.purch-single-card{
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 22px;
+    font-family: 'Roboto', sans-serif;
+    width: 45%;
+}
+.purch-single-card h5 span, .order-overview h5 span, .customer-info span{
+    background-color: #FEECEB;
+    padding: 4px 10px;
+    color: #F44336;
+    border-radius: 40px;
+    margin-right: 12px;
+}
+.purch-single-card p{
+    font-size: 17px;
+    font-weight: 500;
+}
+.purch-single-card label{
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 1.2px;
+    font-size: 15px;
+}
+.purch-single-card input{
+    font-size: 22px;
+}
+.order-overview{
+    background-color: #fff;
+    border-radius: 6px;
+    width: 95%;
+    padding: 22px;
+    margin-top: 12px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 18px;
+}
+.table-head{
+    background-color: #F5F7F9;
+    padding-top: 8px;
+    margin: 0 2px;
 }

@@ -16,9 +16,9 @@ const Explores = () => {
             <div>
                 <SecondNav></SecondNav>
                 <Navbar></Navbar>
-                <div className="products-cont">
+                <div className="products-cont pb-5 pt-5">
                     <div>
-                        <h1 className="text-center mt-5 text-primary">Kids product</h1>
+                        <h2 className="text-center text-dark">Kids product</h2>
                     </div>
                     <div>
                         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-1 container mx-auto mb-5">

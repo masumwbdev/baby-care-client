@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.good-ness .p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+}
+.good-ness .our-ple{
+    border: 0;
+    background-color: #3749BB;
+    color: white;
+    padding: 8px 23px;
+    font-weight: 600;
+}
+.good-ness .our-ple:hover{
+    background-color: rgba(55, 75, 185, 0.1);
+    color: black;
+}
+.good-ness .shop-now{
+    border: 0;
+    padding: 8px 23px;
+    background-color: rgba(55, 75, 185, 0.1);
+    font-weight: 600;
+}
+.goodness-img{
+    width: 90%;
+}
