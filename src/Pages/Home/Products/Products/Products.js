@@ -16,19 +16,26 @@ const Products = () => {
                 <div>
                     <h3 className="mt-5 pt-3 text-center kids-prod">Kids product</h3>
                 </div>
-                <div className='row'>
-                    <div className=''>
-                        <div>
-                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-0 mx-auto">
-                                {
-                                    products.map(product => <Product
-                                        product={product}
-                                    ></Product>)
-                                }
-                            </div>
+                {products.length === 0 ?
+                    <div class="d-flex justify-content-center">
+                        <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Loading...</span>
                         </div>
                     </div>
-                </div>
+                    :
+                    <div className='row'>
+                        <div className=''>
+                            <div>
+                                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-0 mx-auto">
+                                    {
+                                        products.map(product => <Product
+                                            product={product}
+                                        ></Product>)
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>}
                 <div className="text-center pb-5 mt-5">
                     <Link to="/explore">
                         <button className='view-all-products-btn'>View All Products</button>
